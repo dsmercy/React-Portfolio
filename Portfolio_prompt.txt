@@ -1,0 +1,146 @@
+# Portfolio Build — Phased Plan
+
+---
+
+## Phase 1 — Project Foundation & Design System
+**Goal:** Scaffold the project, install all dependencies, and establish the design system. Nothing visible yet except a blank dark page with the correct font and colors.
+
+**Deliverables:**
+- Vite + React + TypeScript project setup
+- Tailwind CSS configured with custom color palette
+- Framer Motion installed
+- Inter/Geist font loaded
+- Global CSS baseline (`globals.css`)
+- Folder structure created (`components/`, `sections/`, `data/`, `hooks/`, `assets/`, `styles/`)
+- `SectionWrapper` reusable component (handles padding, max-width, scroll animation)
+- `Badge` reusable component (for skill/tech tags)
+- `Button` reusable component (primary, ghost variants)
+- SEO meta tags in `index.html`
+- Vite config with `base` set for GitHub Pages
+
+**Test:** App runs on `localhost:5173`, dark background visible, no errors in console.
+
+---
+
+## Phase 2 — Navbar
+**Goal:** Sticky, responsive navbar with smooth scroll navigation.
+
+**Deliverables:**
+- `Navbar` component
+- Logo/name on left: "Daya Shankar"
+- Nav links on right: About, Projects, Skills, Experience, Contact
+- Sticky + `backdrop-blur` on scroll
+- Mobile hamburger menu (collapsible)
+- Smooth scroll to sections on link click
+- Subtle border-bottom on scroll
+
+**Test:** Navbar sticks on scroll, links jump to correct sections, hamburger works on mobile.
+
+---
+
+## Phase 3 — Hero Section
+**Goal:** Strong first impression. Animated intro with CTAs.
+
+**Deliverables:**
+- `Hero` section component
+- Name, title, tagline rendered
+- 🟢 "Open to Remote Roles Globally" status badge
+- Three CTA buttons: `View Projects`, `Download Resume`, `GitHub`
+- Subtle CSS animated background (grid or gradient — no heavy libs)
+- Framer Motion fade-in + slide-up on load
+- Fully responsive (stacked on mobile)
+
+**Test:** Page loads with animation, all three buttons work, background effect visible, looks correct on mobile.
+
+---
+
+## Phase 4 — About & Skills Sections
+**Goal:** Two content-heavy sections that establish credibility.
+
+**Deliverables:**
+- `About` section with bio copy and expertise badges
+- `Skills` section with categorized skill cards
+- `data/skills.ts` with all skill data
+- Scroll-triggered fade-in animations
+- Skills displayed as category cards with badge grid inside
+- Responsive layout
+
+**Test:** Both sections render correctly, badges display, animations trigger on scroll.
+
+---
+
+## Phase 5 — Projects Section
+**Goal:** The most visually impactful section. Must look portfolio-worthy.
+
+**Deliverables:**
+- `Projects` section component
+- `data/projects.ts` with all 4 projects
+- 2-column responsive grid (1-col mobile)
+- Project cards with: icon, title, description, tech badges, bullet highlights, GitHub button
+- Hover effects on cards (subtle border glow or lift)
+- Scroll-triggered staggered animations (cards appear one by one)
+- All GitHub links open in new tab
+
+**Test:** All 4 cards render, GitHub links work, hover effects visible, stagger animation fires on scroll, looks strong on mobile.
+
+---
+
+## Phase 6 — Experience Section
+**Goal:** Vertical timeline that communicates career progression clearly.
+
+**Deliverables:**
+- `Experience` section component
+- `data/experience.ts` with all 3 roles
+- Vertical timeline UI (left line + dot + card)
+- Company, date range, and bullet points per role
+- Scroll-triggered animations (timeline items slide in sequentially)
+- Responsive (timeline collapses cleanly on mobile)
+
+**Test:** All 3 roles render, timeline line and dots display, animations stagger correctly on scroll.
+
+---
+
+## Phase 7 — Contact Section & Footer
+**Goal:** Clear call-to-action and professional close.
+
+**Deliverables:**
+- `Contact` section with headline and subtext
+- Email display with copy-to-clipboard button (shows ✅ on copy)
+- GitHub, LinkedIn icon links
+- 🟢 Open to Remote status badge
+- `useCopyToClipboard` custom hook
+- Simple footer with name + year
+- Scroll-triggered fade-in
+
+**Test:** Copy button works and shows confirmation, all links open correctly, footer renders, looks clean on mobile.
+
+---
+
+## Phase 8 — Polish & GitHub Pages Deployment
+**Goal:** Performance, polish, and live deployment.
+
+**Deliverables:**
+- Audit all animations for smoothness
+- Check all links and buttons end-to-end
+- Add `resume.pdf` placeholder to `/assets`
+- Add `404.html` for SPA routing on GitHub Pages
+- `gh-pages` package setup + deploy script
+- Final Lighthouse check (target 90+ performance)
+- Cross-browser check (Chrome, Firefox, Safari)
+
+**Test:** Site deploys to GitHub Pages, loads correctly on the live URL, Lighthouse score 90+.
+
+---
+
+## Summary Table
+
+| Phase | Focus | Testable Output |
+|---|---|---|
+| 1 | Foundation & Design System | Blank dark page, no errors |
+| 2 | Navbar | Sticky nav, smooth scroll, mobile menu |
+| 3 | Hero | Animated hero, CTAs work |
+| 4 | About + Skills | Bio, badges, skill cards |
+| 5 | Projects | 4 project cards, GitHub links |
+| 6 | Experience | Vertical timeline, 3 roles |
+| 7 | Contact + Footer | Copy email, social links |
+| 8 | Polish + Deploy | Live on GitHub Pages |
