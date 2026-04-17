@@ -39,7 +39,7 @@ export default function About() {
               I'm a Senior Backend Engineer with 7+ years of experience designing and
               building scalable, distributed systems. My stack centres on .NET Core and
               cloud-native technologies — with deep hands-on work in microservices,
-              event-driven architecture, and API gateway patterns.
+              event-driven architecture, and API gateway patterns. 
             </p>
             <p>
               I've led modernisation of legacy APIs to .NET 8, owned 20+ production
