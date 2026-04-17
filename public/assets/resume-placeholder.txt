@@ -1,0 +1,2 @@
+Replace this file with your actual resume.pdf and rename it to resume.pdf.
+The Hero section links to: /portfolio/assets/resume.pdf

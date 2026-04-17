@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daya Shankar — Portfolio</title>
+    <!--
+      GitHub Pages SPA redirect trick.
+      Redirects all 404s back to index.html so React Router (if added later)
+      and direct deep-links continue to work.
+    -->
+    <script>
+      const seg = 1
+      const l = window.location
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + seg).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(seg).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      )
+    </script>
+  </head>
+  <body></body>
+</html>
