@@ -117,7 +117,7 @@ export default function Hero() {
 
             <Button
               variant="ghost"
-              href="/React-Portfolio/assets/resume.pdf"
+              href="/Portfolio/assets/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
